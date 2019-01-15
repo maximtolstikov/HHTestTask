@@ -75,6 +75,64 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9476B8C921EDC2E5009D7BE7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9476B8CF21EDC381009D7BE7 /* Flows */,
+				9476B8CA21EDC2F2009D7BE7 /* BussinessLogic */,
+				9494108C21EDC04B00FA6D2B /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9476B8CA21EDC2F2009D7BE7 /* BussinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BussinessLogic;
+			sourceTree = "<group>";
+		};
+		9476B8CB21EDC2FF009D7BE7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9476B8CC21EDC307009D7BE7 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9476B8CC21EDC307009D7BE7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9476B8CD21EDC310009D7BE7 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				9494109521EDC04C00FA6D2B /* LaunchScreen.storyboard */,
+				9494109821EDC04C00FA6D2B /* Info.plist */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		9476B8CE21EDC33E009D7BE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9494109321EDC04C00FA6D2B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9476B8CF21EDC381009D7BE7 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				9494108E21EDC04B00FA6D2B /* ViewController.swift */,
+				9494109021EDC04B00FA6D2B /* Main.storyboard */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
 		9494108021EDC04B00FA6D2B = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +156,10 @@
 		9494108B21EDC04B00FA6D2B /* HHTestTask */ = {
 			isa = PBXGroup;
 			children = (
-				9494108C21EDC04B00FA6D2B /* AppDelegate.swift */,
-				9494108E21EDC04B00FA6D2B /* ViewController.swift */,
-				9494109021EDC04B00FA6D2B /* Main.storyboard */,
-				9494109321EDC04C00FA6D2B /* Assets.xcassets */,
-				9494109521EDC04C00FA6D2B /* LaunchScreen.storyboard */,
-				9494109821EDC04C00FA6D2B /* Info.plist */,
+				9476B8C921EDC2E5009D7BE7 /* App */,
+				9476B8CB21EDC2FF009D7BE7 /* Core */,
+				9476B8CD21EDC310009D7BE7 /* Environment */,
+				9476B8CE21EDC33E009D7BE7 /* Resources */,
 			);
 			path = HHTestTask;
 			sourceTree = "<group>";
