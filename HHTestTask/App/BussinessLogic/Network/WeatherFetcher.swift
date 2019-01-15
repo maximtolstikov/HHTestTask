@@ -17,7 +17,7 @@ struct WeatherFetcher: Fetcher {
     let networking: Networking
     
     
-    init(_ networking: Networking) {
+    init(networking: Networking) {
         self.networking = networking
     }
     

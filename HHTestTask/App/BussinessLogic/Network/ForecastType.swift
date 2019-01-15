@@ -27,7 +27,7 @@ extension ForecastType {
     var path: String {
         switch self {
         case .current(let coordinates):
-            return "/forecast/\(apiKey)/\(coordinates.latitude),\(coordinates.longitude)"
+            return "\(baseURL)/forecast/\(apiKey)/\(coordinates.latitude),\(coordinates.longitude)"
         }
     }
     

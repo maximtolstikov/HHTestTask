@@ -7,24 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B779191030CF58CC652D28B /* Pods_HHTestTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57370178FD66AE783D3F3AC /* Pods_HHTestTaskTests.framework */; };
+		2DEE477A808AADA89A6F081E /* Pods_HHTestTask_HHTestTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F018B5825F05800336EAAF /* Pods_HHTestTask_HHTestTaskTests.framework */; };
 		9476B8D121EDC443009D7BE7 /* HTTPNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476B8D021EDC443009D7BE7 /* HTTPNetworking.swift */; };
 		9476B8D421EDC4A5009D7BE7 /* ForecastType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476B8D321EDC4A5009D7BE7 /* ForecastType.swift */; };
 		9476B8D921EDC4EE009D7BE7 /* CurrentlyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476B8D621EDC4EE009D7BE7 /* CurrentlyWeather.swift */; };
 		9476B8DA21EDC4EE009D7BE7 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476B8D721EDC4EE009D7BE7 /* Coordinates.swift */; };
 		9476B8DB21EDC4EE009D7BE7 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476B8D821EDC4EE009D7BE7 /* Weather.swift */; };
 		9476B8DD21EDC507009D7BE7 /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476B8DC21EDC507009D7BE7 /* WeatherFetcher.swift */; };
+		9476B8F521EDCDB4009D7BE7 /* HHTestTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476B8F421EDCDB4009D7BE7 /* HHTestTaskTests.swift */; };
+		9476B8FC21EDCDBD009D7BE7 /* FetchWeatherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476B8DE21EDC62B009D7BE7 /* FetchWeatherTest.swift */; };
 		9494108D21EDC04B00FA6D2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494108C21EDC04B00FA6D2B /* AppDelegate.swift */; };
 		9494108F21EDC04B00FA6D2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494108E21EDC04B00FA6D2B /* ViewController.swift */; };
 		9494109221EDC04B00FA6D2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9494109021EDC04B00FA6D2B /* Main.storyboard */; };
 		9494109421EDC04C00FA6D2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9494109321EDC04C00FA6D2B /* Assets.xcassets */; };
 		9494109721EDC04C00FA6D2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9494109521EDC04C00FA6D2B /* LaunchScreen.storyboard */; };
-		949410A221EDC04C00FA6D2B /* HHTestTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949410A121EDC04C00FA6D2B /* HHTestTaskTests.swift */; };
 		EDC13BE4F9D5D9A8FC38A9DC /* Pods_HHTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E099D660FA549D9097054FA /* Pods_HHTestTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9494109E21EDC04C00FA6D2B /* PBXContainerItemProxy */ = {
+		9476B8F721EDCDB4009D7BE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9494108121EDC04B00FA6D2B /* Project object */;
 			proxyType = 1;
@@ -38,12 +39,18 @@
 		49CB860BCBCF9DCBC51A98B0 /* Pods-HHTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTestTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHTestTask/Pods-HHTestTask.release.xcconfig"; sourceTree = "<group>"; };
 		4A462F565F738E9529C7EB2D /* Pods-HHTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTestTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHTestTask/Pods-HHTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 		5E099D660FA549D9097054FA /* Pods_HHTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C83C3FE8DDDDB02FCE96FBF /* Pods-HHTestTask-HHTestTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTestTask-HHTestTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHTestTask-HHTestTaskTests/Pods-HHTestTask-HHTestTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		79F018B5825F05800336EAAF /* Pods_HHTestTask_HHTestTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHTestTask_HHTestTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9476B8D021EDC443009D7BE7 /* HTTPNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPNetworking.swift; sourceTree = "<group>"; };
 		9476B8D321EDC4A5009D7BE7 /* ForecastType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastType.swift; sourceTree = "<group>"; };
 		9476B8D621EDC4EE009D7BE7 /* CurrentlyWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentlyWeather.swift; sourceTree = "<group>"; };
 		9476B8D721EDC4EE009D7BE7 /* Coordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		9476B8D821EDC4EE009D7BE7 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		9476B8DC21EDC507009D7BE7 /* WeatherFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherFetcher.swift; sourceTree = "<group>"; };
+		9476B8DE21EDC62B009D7BE7 /* FetchWeatherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWeatherTest.swift; sourceTree = "<group>"; };
+		9476B8F221EDCDB4009D7BE7 /* HHTestTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHTestTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9476B8F421EDCDB4009D7BE7 /* HHTestTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHTestTaskTests.swift; sourceTree = "<group>"; };
+		9476B8F621EDCDB4009D7BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9494108921EDC04B00FA6D2B /* HHTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9494108C21EDC04B00FA6D2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9494108E21EDC04B00FA6D2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,27 +58,25 @@
 		9494109321EDC04C00FA6D2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9494109621EDC04C00FA6D2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9494109821EDC04C00FA6D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9494109D21EDC04C00FA6D2B /* HHTestTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHTestTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		949410A121EDC04C00FA6D2B /* HHTestTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHTestTaskTests.swift; sourceTree = "<group>"; };
-		949410A321EDC04C00FA6D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E44AB0C0F6AC4A9BC2D3018 /* Pods-HHTestTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTestTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHTestTaskTests/Pods-HHTestTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDA337ECCD40F5CFFC72BD34 /* Pods-HHTestTask-HHTestTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTestTask-HHTestTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHTestTask-HHTestTaskTests/Pods-HHTestTask-HHTestTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E57370178FD66AE783D3F3AC /* Pods_HHTestTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHTestTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9476B8EF21EDCDB4009D7BE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DEE477A808AADA89A6F081E /* Pods_HHTestTask_HHTestTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9494108621EDC04B00FA6D2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EDC13BE4F9D5D9A8FC38A9DC /* Pods_HHTestTask.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9494109A21EDC04C00FA6D2B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B779191030CF58CC652D28B /* Pods_HHTestTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 			children = (
 				5E099D660FA549D9097054FA /* Pods_HHTestTask.framework */,
 				E57370178FD66AE783D3F3AC /* Pods_HHTestTaskTests.framework */,
+				79F018B5825F05800336EAAF /* Pods_HHTestTask_HHTestTaskTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,11 +173,21 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		9476B8F321EDCDB4009D7BE7 /* HHTestTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				9476B8DE21EDC62B009D7BE7 /* FetchWeatherTest.swift */,
+				9476B8F421EDCDB4009D7BE7 /* HHTestTaskTests.swift */,
+				9476B8F621EDCDB4009D7BE7 /* Info.plist */,
+			);
+			path = HHTestTaskTests;
+			sourceTree = "<group>";
+		};
 		9494108021EDC04B00FA6D2B = {
 			isa = PBXGroup;
 			children = (
 				9494108B21EDC04B00FA6D2B /* HHTestTask */,
-				949410A021EDC04C00FA6D2B /* HHTestTaskTests */,
+				9476B8F321EDCDB4009D7BE7 /* HHTestTaskTests */,
 				9494108A21EDC04B00FA6D2B /* Products */,
 				B7294CAFDB93BB28D77E25AB /* Pods */,
 				232526B9EE673A85196B3EFE /* Frameworks */,
@@ -182,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				9494108921EDC04B00FA6D2B /* HHTestTask.app */,
-				9494109D21EDC04C00FA6D2B /* HHTestTaskTests.xctest */,
+				9476B8F221EDCDB4009D7BE7 /* HHTestTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,15 +214,6 @@
 			path = HHTestTask;
 			sourceTree = "<group>";
 		};
-		949410A021EDC04C00FA6D2B /* HHTestTaskTests */ = {
-			isa = PBXGroup;
-			children = (
-				949410A121EDC04C00FA6D2B /* HHTestTaskTests.swift */,
-				949410A321EDC04C00FA6D2B /* Info.plist */,
-			);
-			path = HHTestTaskTests;
-			sourceTree = "<group>";
-		};
 		B7294CAFDB93BB28D77E25AB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +221,8 @@
 				49CB860BCBCF9DCBC51A98B0 /* Pods-HHTestTask.release.xcconfig */,
 				10282E18C1D36FD717DF2296 /* Pods-HHTestTaskTests.debug.xcconfig */,
 				9E44AB0C0F6AC4A9BC2D3018 /* Pods-HHTestTaskTests.release.xcconfig */,
+				BDA337ECCD40F5CFFC72BD34 /* Pods-HHTestTask-HHTestTaskTests.debug.xcconfig */,
+				6C83C3FE8DDDDB02FCE96FBF /* Pods-HHTestTask-HHTestTaskTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -221,6 +230,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9476B8F121EDCDB4009D7BE7 /* HHTestTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9476B8F921EDCDB4009D7BE7 /* Build configuration list for PBXNativeTarget "HHTestTaskTests" */;
+			buildPhases = (
+				34B9A4E0021043CE9139F1F0 /* [CP] Check Pods Manifest.lock */,
+				9476B8EE21EDCDB4009D7BE7 /* Sources */,
+				9476B8EF21EDCDB4009D7BE7 /* Frameworks */,
+				9476B8F021EDCDB4009D7BE7 /* Resources */,
+				E628E9CD2D5FF6D64818C1EE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9476B8F821EDCDB4009D7BE7 /* PBXTargetDependency */,
+			);
+			name = HHTestTaskTests;
+			productName = HHTestTaskTests;
+			productReference = 9476B8F221EDCDB4009D7BE7 /* HHTestTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9494108821EDC04B00FA6D2B /* HHTestTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 949410A621EDC04C00FA6D2B /* Build configuration list for PBXNativeTarget "HHTestTask" */;
@@ -240,25 +269,6 @@
 			productReference = 9494108921EDC04B00FA6D2B /* HHTestTask.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9494109C21EDC04C00FA6D2B /* HHTestTaskTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 949410A921EDC04C00FA6D2B /* Build configuration list for PBXNativeTarget "HHTestTaskTests" */;
-			buildPhases = (
-				31CCABEBDAD6EC2FE6CF4458 /* [CP] Check Pods Manifest.lock */,
-				9494109921EDC04C00FA6D2B /* Sources */,
-				9494109A21EDC04C00FA6D2B /* Frameworks */,
-				9494109B21EDC04C00FA6D2B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9494109F21EDC04C00FA6D2B /* PBXTargetDependency */,
-			);
-			name = HHTestTaskTests;
-			productName = HHTestTaskTests;
-			productReference = 9494109D21EDC04C00FA6D2B /* HHTestTaskTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -269,12 +279,12 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Maxim Tolstikov";
 				TargetAttributes = {
-					9494108821EDC04B00FA6D2B = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					9494109C21EDC04C00FA6D2B = {
+					9476B8F121EDCDB4009D7BE7 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 9494108821EDC04B00FA6D2B;
+					};
+					9494108821EDC04B00FA6D2B = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -292,12 +302,19 @@
 			projectRoot = "";
 			targets = (
 				9494108821EDC04B00FA6D2B /* HHTestTask */,
-				9494109C21EDC04C00FA6D2B /* HHTestTaskTests */,
+				9476B8F121EDCDB4009D7BE7 /* HHTestTaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9476B8F021EDCDB4009D7BE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9494108721EDC04B00FA6D2B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,17 +325,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9494109B21EDC04C00FA6D2B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		31CCABEBDAD6EC2FE6CF4458 /* [CP] Check Pods Manifest.lock */ = {
+		34B9A4E0021043CE9139F1F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,7 +339,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HHTestTaskTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HHTestTask-HHTestTaskTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -352,6 +362,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E628E9CD2D5FF6D64818C1EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HHTestTask-HHTestTaskTests/Pods-HHTestTask-HHTestTaskTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HHTestTask-HHTestTaskTests/Pods-HHTestTask-HHTestTaskTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F31B2F05703DCED6F247D167 /* [CP] Embed Pods Frameworks */ = {
@@ -381,6 +415,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9476B8EE21EDCDB4009D7BE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9476B8F521EDCDB4009D7BE7 /* HHTestTaskTests.swift in Sources */,
+				9476B8FC21EDCDBD009D7BE7 /* FetchWeatherTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9494108521EDC04B00FA6D2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,21 +439,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9494109921EDC04C00FA6D2B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				949410A221EDC04C00FA6D2B /* HHTestTaskTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9494109F21EDC04C00FA6D2B /* PBXTargetDependency */ = {
+		9476B8F821EDCDB4009D7BE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9494108821EDC04B00FA6D2B /* HHTestTask */;
-			targetProxy = 9494109E21EDC04C00FA6D2B /* PBXContainerItemProxy */;
+			targetProxy = 9476B8F721EDCDB4009D7BE7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +469,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9476B8FA21EDCDB4009D7BE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDA337ECCD40F5CFFC72BD34 /* Pods-HHTestTask-HHTestTaskTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X37P9Q6XJN;
+				INFOPLIST_FILE = HHTestTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.hopto.tolstikov.HHTestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HHTestTask.app/HHTestTask";
+			};
+			name = Debug;
+		};
+		9476B8FB21EDCDB4009D7BE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C83C3FE8DDDDB02FCE96FBF /* Pods-HHTestTask-HHTestTaskTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X37P9Q6XJN;
+				INFOPLIST_FILE = HHTestTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.hopto.tolstikov.HHTestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HHTestTask.app/HHTestTask";
+			};
+			name = Release;
+		};
 		949410A421EDC04C00FA6D2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -540,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -590,53 +669,18 @@
 			};
 			name = Release;
 		};
-		949410AA21EDC04C00FA6D2B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10282E18C1D36FD717DF2296 /* Pods-HHTestTaskTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X37P9Q6XJN;
-				INFOPLIST_FILE = HHTestTaskTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.hopto.tolstikov.HHTestTaskTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HHTestTask.app/HHTestTask";
-			};
-			name = Debug;
-		};
-		949410AB21EDC04C00FA6D2B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E44AB0C0F6AC4A9BC2D3018 /* Pods-HHTestTaskTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X37P9Q6XJN;
-				INFOPLIST_FILE = HHTestTaskTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.hopto.tolstikov.HHTestTaskTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HHTestTask.app/HHTestTask";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9476B8F921EDCDB4009D7BE7 /* Build configuration list for PBXNativeTarget "HHTestTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9476B8FA21EDCDB4009D7BE7 /* Debug */,
+				9476B8FB21EDCDB4009D7BE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9494108421EDC04B00FA6D2B /* Build configuration list for PBXProject "HHTestTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -651,15 +695,6 @@
 			buildConfigurations = (
 				949410A721EDC04C00FA6D2B /* Debug */,
 				949410A821EDC04C00FA6D2B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		949410A921EDC04C00FA6D2B /* Build configuration list for PBXNativeTarget "HHTestTaskTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				949410AA21EDC04C00FA6D2B /* Debug */,
-				949410AB21EDC04C00FA6D2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

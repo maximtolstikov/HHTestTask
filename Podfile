@@ -11,8 +11,8 @@ target 'HHTestTask' do
   pod 'SwinjectAutoregistration', '~> 2.5.0'
 
   target 'HHTestTaskTests' do
-    inherit! :search_paths
-    # Pods for testing
+    pod 'Swinject', '2.5.0'
+    pod 'SwinjectAutoregistration', '2.5.0'
   end
 
 end
