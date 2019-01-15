@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import HHTestTask
 
 class HHTestTaskTests: XCTestCase {
 
