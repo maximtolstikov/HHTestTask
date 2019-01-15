@@ -10,6 +10,8 @@ import SwinjectAutoregistration
 import XCTest
 @testable import HHTestTask
 
+// Проверяю получение данных из интернета, но по хорошему нужно написать mock.
+
 class FetchWeatherTest: XCTestCase {
 
     private let container = Container()
@@ -33,7 +35,6 @@ class FetchWeatherTest: XCTestCase {
         
         fetcher.fetch(for: coordinates) { (weather) in
             expectation.fulfill()
-            print("Result: \(weather)")
             XCTAssertNotNil(weather)            
         }
         
