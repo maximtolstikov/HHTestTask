@@ -19,15 +19,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bc5-nm-HT6">
-                                <rect key="frame" x="120.5" y="315" width="134" height="37"/>
+                                <rect key="frame" x="112.5" y="308.5" width="150" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.56470588235294117" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="t5B-t9-yRJ"/>
+                                    <constraint firstAttribute="width" constant="150" id="zKP-Dg-3un"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Авторизация">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="padding">
+                                        <rect key="value" x="5" y="5" width="5" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bc5-nm-HT6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XB9-2S-bRe"/>
                             <constraint firstItem="bc5-nm-HT6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sxg-97-Zm5"/>
