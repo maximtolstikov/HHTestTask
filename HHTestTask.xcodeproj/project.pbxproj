@@ -20,6 +20,9 @@
 		9476B90721EDF094009D7BE7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476B90621EDF094009D7BE7 /* AuthViewController.swift */; };
 		948851BB21EF34D7003E05B1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948851BA21EF34D7003E05B1 /* LocationService.swift */; };
 		948851BE21EF3DE1003E05B1 /* SwinjectStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948851BD21EF3DE1003E05B1 /* SwinjectStoryboard+Extension.swift */; };
+		948851C021EF55A1003E05B1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948851BF21EF55A1003E05B1 /* String.swift */; };
+		948851C621EF5A5E003E05B1 /* AlertTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948851C521EF5A5E003E05B1 /* AlertTitle.swift */; };
+		948851C821EF5FAF003E05B1 /* AlertWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948851C721EF5FAF003E05B1 /* AlertWarning.swift */; };
 		9494108D21EDC04B00FA6D2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494108C21EDC04B00FA6D2B /* AppDelegate.swift */; };
 		9494108F21EDC04B00FA6D2B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494108E21EDC04B00FA6D2B /* StartViewController.swift */; };
 		9494109221EDC04B00FA6D2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9494109021EDC04B00FA6D2B /* Main.storyboard */; };
@@ -59,6 +62,9 @@
 		9476B90621EDF094009D7BE7 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		948851BA21EF34D7003E05B1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		948851BD21EF3DE1003E05B1 /* SwinjectStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		948851BF21EF55A1003E05B1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		948851C521EF5A5E003E05B1 /* AlertTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTitle.swift; sourceTree = "<group>"; };
+		948851C721EF5FAF003E05B1 /* AlertWarning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWarning.swift; sourceTree = "<group>"; };
 		9494108921EDC04B00FA6D2B /* HHTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9494108C21EDC04B00FA6D2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9494108E21EDC04B00FA6D2B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 		9476B8CB21EDC2FF009D7BE7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				948851C421EF5A46003E05B1 /* Alert */,
 				9476B90321EDE986009D7BE7 /* Extensions */,
 				9476B8CC21EDC307009D7BE7 /* Network */,
 			);
@@ -206,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				9476B90421EDE9C1009D7BE7 /* UIViewExtensions.swift */,
+				948851BF21EF55A1003E05B1 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -241,6 +249,15 @@
 				948851BD21EF3DE1003E05B1 /* SwinjectStoryboard+Extension.swift */,
 			);
 			path = Assambly;
+			sourceTree = "<group>";
+		};
+		948851C421EF5A46003E05B1 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				948851C521EF5A5E003E05B1 /* AlertTitle.swift */,
+				948851C721EF5FAF003E05B1 /* AlertWarning.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		9494108021EDC04B00FA6D2B = {
@@ -489,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9476B8DD21EDC507009D7BE7 /* WeatherFetcher.swift in Sources */,
+				948851C021EF55A1003E05B1 /* String.swift in Sources */,
 				9494108F21EDC04B00FA6D2B /* StartViewController.swift in Sources */,
 				9476B90721EDF094009D7BE7 /* AuthViewController.swift in Sources */,
 				9476B8D121EDC443009D7BE7 /* HTTPNetworking.swift in Sources */,
@@ -496,7 +514,9 @@
 				9476B8D421EDC4A5009D7BE7 /* ForecastType.swift in Sources */,
 				948851BB21EF34D7003E05B1 /* LocationService.swift in Sources */,
 				9476B8DA21EDC4EE009D7BE7 /* Coordinates.swift in Sources */,
+				948851C621EF5A5E003E05B1 /* AlertTitle.swift in Sources */,
 				9494108D21EDC04B00FA6D2B /* AppDelegate.swift in Sources */,
+				948851C821EF5FAF003E05B1 /* AlertWarning.swift in Sources */,
 				948851BE21EF3DE1003E05B1 /* SwinjectStoryboard+Extension.swift in Sources */,
 				9476B8D921EDC4EE009D7BE7 /* CurrentlyWeather.swift in Sources */,
 				9476B8DB21EDC4EE009D7BE7 /* Weather.swift in Sources */,

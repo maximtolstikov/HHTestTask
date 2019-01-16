@@ -236,6 +236,8 @@
                         <viewLayoutGuide key="safeArea" id="tXS-xA-dfS"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="p2e-71-F02" id="NQL-nh-yQD"/>
+                        <outlet property="passwordTextField" destination="PxQ-6d-3A1" id="3lT-Rt-UVS"/>
                         <outlet property="scrollView" destination="BU9-dh-tqF" id="oYo-Ig-F6Z"/>
                         <outlet property="stackView" destination="nab-nb-muz" id="pSu-b0-3jo"/>
                         <outlet property="stackViewCenter" destination="rRs-Yx-wkS" id="YKd-3a-vWj"/>

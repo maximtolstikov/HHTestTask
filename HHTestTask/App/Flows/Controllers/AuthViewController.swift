@@ -13,6 +13,8 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackViewCenter: NSLayoutConstraint!
     @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     var networkService: Fetcher?
     var locationService: LocationService?
@@ -55,6 +57,19 @@ class AuthViewController: UIViewController {
     
     
     @IBAction func loginTapped(_ sender: UIButton) {
+        validateForm()
+    }
+    
+    private func validateForm() {
+        
+        guard let email = emailTextField.text, email.isValidEmail() else {
+            alertWith(title: .warning, body: AlertWarning.unsuitableEmail.rawValue)
+            return
+        }
+        guard let password = passwordTextField.text, password.isValidPassword() else {
+            alertWith(title: .warning, body: AlertWarning.unsuitablePassword.rawValue)
+            return
+        }
         fetchData()
     }
     
@@ -65,24 +80,24 @@ class AuthViewController: UIViewController {
             return
         }
         guard let coordinates = locationService.currentCoordinates() else {
-            showWeatherAlert(text: "Неудалось получить данные местаположения!")
+            alertWith(title: .warning, body: AlertWarning.locationError.rawValue)
             return
         }
         
         networkService.fetch(for: coordinates, response: { [weak self] (weather) in
             guard let weather = weather else {
-                self?.showWeatherAlert(text: "Неудалось загрузить данные о погоде из интернета!")
+                self?.alertWith(title: .warning, body: AlertWarning.fetchError.rawValue)
                 return
             }
 
             let output = "Температура: \(weather.temperatureString)\nДавлление: \(weather.pressereString)\nВлажность: \(weather.humidityString)"
-            self?.showWeatherAlert(text: output)
+            self?.alertWith(title: .weather, body: output)
         })
     }
     
-    private func showWeatherAlert(text: String) {
-        let alertController = UIAlertController(title: "Текущая погода",
-                                                message: text,
+    private func alertWith(title: AlertTitle, body: String) {
+        let alertController = UIAlertController(title: title.rawValue,
+                                                message: body,
                                                 preferredStyle: .alert)
         let cancel = UIAlertAction(title: "Ok", style: .cancel)
         alertController.addAction(cancel)
