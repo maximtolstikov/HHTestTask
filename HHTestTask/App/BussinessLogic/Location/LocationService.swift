@@ -9,6 +9,7 @@ protocol LocationService {
     func currentCoordinates() -> Coordinates?
 }
 
+/// Заглушка для сервиса получения местоположения
 class LocationServiceImpl: LocationService {
     
     func currentCoordinates() -> Coordinates? {

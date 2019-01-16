@@ -29,6 +29,9 @@ class AuthViewController: UIViewController {
         } else {
             automaticallyAdjustsScrollViewInsets = false
         }
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
 
     
@@ -57,11 +60,13 @@ class AuthViewController: UIViewController {
     
     
     @IBAction func loginTapped(_ sender: UIButton) {
-        validateForm()
+        run()
     }
     
-    private func validateForm() {
+    
+    private func run() {
         
+        // валидируем поля формы
         guard let email = emailTextField.text, email.isValidEmail() else {
             alertWith(title: .warning, body: AlertWarning.unsuitableEmail.rawValue)
             return
@@ -70,6 +75,7 @@ class AuthViewController: UIViewController {
             alertWith(title: .warning, body: AlertWarning.unsuitablePassword.rawValue)
             return
         }
+        //делаем запрос погоды
         fetchData()
     }
     
@@ -149,4 +155,32 @@ extension AuthViewController {
         }
     }
 
+}
+
+
+extension AuthViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        switch textField.keyboardType {
+        case .emailAddress:
+            guard let email = textField.text, email.isValidEmail() else {
+                alertWith(title: .warning, body: AlertWarning.unsuitableEmail.rawValue)
+                return false
+            }
+            passwordTextField.becomeFirstResponder()
+            return true
+        case .default:
+            guard let password = passwordTextField.text, password.isValidPassword() else {
+                alertWith(title: .warning, body: AlertWarning.unsuitablePassword.rawValue)
+                return false
+            }
+            textField.resignFirstResponder()
+            run()
+            return true
+        default:
+            return false
+        }
+
+    }
 }
