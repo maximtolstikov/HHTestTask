@@ -116,13 +116,14 @@ extension AuthViewController {
         moveStackView(notification: notification)
     }
     
-    // когда клавиатура исчезает
+    // когда клавиатура исчезает возвращаем стэкВью в исходное положение
     @objc func keyboardWillBeHiden(notification: Notification) {
-        moveStackView(notification: notification)
+        stackViewCenter.constant = 0
     }
     
     // Здесь смещение можно реализовать с анимацией
     private func moveStackView(notification: Notification) {
+        
         // получаем размер клавиатуры
         let info = notification.userInfo! as NSDictionary
         let kbSize = (info.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue).cgRectValue.size
@@ -145,21 +146,7 @@ extension AuthViewController {
         // если разница отрицательна то двигаем стек на разницу
         if difference < 0 {
             stackViewCenter.constant += CGFloat(difference)
-        } else {
-            stackViewCenter.constant = 0
         }
-        
-        //FIXME: исправить баг когда у iOS 10 при переходе на следующее поле вызывается клавиатура и стек падает
-        
-//        print("bottomEgeStak: \(bottomEdgeStak)")
-//        print("bottomHeight: \(bottomHeight)")
-//        print("diffetence: \(difference)")
-//        print("hs: \(heightScreen)")
-//        print("stack.center: \(stackView.center.y)")
-//        print("stak.origin: \(stackView.frame.origin.y)")
-//        print("stak.height: \(stackView.frame.height)")
-//        print("view.origin: \(view.frame.origin.y)")
-//        print("view.height: \(view.frame.height)")
     }
 
 }
