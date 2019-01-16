@@ -13,11 +13,16 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackViewCenter: NSLayoutConstraint!
     @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.automaticallyAdjustsScrollViewInsets = false
+        if #available(iOS 11.0, *) {
+            scrollView.contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -87,7 +92,7 @@ extension AuthViewController {
             stackViewCenter.constant = 0
         }
         
-        // TODO: исправить баг когда у iOS 10 при переходе на следующее поле вызывается клавиатура и стек падает
+        //TODO: исправить баг когда у iOS 10 при переходе на следующее поле вызывается клавиатура и стек падает
         
 //        print("bottomEgeStak: \(bottomEdgeStak)")
 //        print("bottomHeight: \(bottomHeight)")
