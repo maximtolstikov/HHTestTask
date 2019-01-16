@@ -70,12 +70,13 @@ class AuthViewController: UIViewController {
         }
         
         networkService.fetch(for: coordinates, response: { [weak self] (weather) in
-            
             guard let weather = weather else {
                 self?.showWeatherAlert(text: "Неудалось загрузить данные о погоде из интернета!")
                 return
             }
-            self?.showWeatherAlert(text: "\(weather.humidityString), \(weather.temperatureString)")
+
+            let output = "Температура: \(weather.temperatureString)\nДавлление: \(weather.pressereString)\nВлажность: \(weather.humidityString)"
+            self?.showWeatherAlert(text: output)
         })
     }
     
