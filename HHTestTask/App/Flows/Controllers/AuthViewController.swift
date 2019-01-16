@@ -14,12 +14,22 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var stackViewCenter: NSLayoutConstraint!
     @IBOutlet weak var stackView: UIStackView!
     
+    var networkService: Fetcher?
+    var locationService: LocationService?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.automaticallyAdjustsScrollViewInsets = false
+        // изменяем поведение скроллВью что бы контент не уходил под навигэшн
+        if #available(iOS 11.0, *) {
+            scrollView.contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
     }
 
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -39,9 +49,46 @@ class AuthViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
+        // Отписываемся от всех уведомлений
         NotificationCenter.default.removeObserver(self)
     }
+    
+    
+    @IBAction func loginTapped(_ sender: UIButton) {
+        fetchData()
+    }
+    
+    private func fetchData() {
+        
+        guard let networkService = networkService, let locationService = locationService else {
+            assertionFailure()
+            return
+        }
+        guard let coordinates = locationService.currentCoordinates() else {
+            showWeatherAlert(text: "Неудалось получить данные местаположения!")
+            return
+        }
+        
+        networkService.fetch(for: coordinates, response: { [weak self] (weather) in
+            guard let weather = weather else {
+                self?.showWeatherAlert(text: "Неудалось загрузить данные о погоде из интернета!")
+                return
+            }
 
+            let output = "Температура: \(weather.temperatureString)\nДавлление: \(weather.pressereString)\nВлажность: \(weather.humidityString)"
+            self?.showWeatherAlert(text: output)
+        })
+    }
+    
+    private func showWeatherAlert(text: String) {
+        let alertController = UIAlertController(title: "Текущая погода",
+                                                message: text,
+                                                preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Ok", style: .cancel)
+        alertController.addAction(cancel)
+        present(alertController, animated: true)
+    }
+    
 }
 
 
@@ -87,7 +134,7 @@ extension AuthViewController {
             stackViewCenter.constant = 0
         }
         
-        // TODO: исправить баг когда у iOS 10 при переходе на следующее поле вызывается клавиатура и стек падает
+        //FIXME: исправить баг когда у iOS 10 при переходе на следующее поле вызывается клавиатура и стек падает
         
 //        print("bottomEgeStak: \(bottomEdgeStak)")
 //        print("bottomHeight: \(bottomHeight)")
