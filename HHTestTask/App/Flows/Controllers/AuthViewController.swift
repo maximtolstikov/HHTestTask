@@ -72,6 +72,7 @@ class AuthViewController: UIViewController {
             return
         }
         guard let password = passwordTextField.text, password.isValidPassword() else {
+            passwordTextField.text = ""
             alertWith(title: .warning, body: AlertWarning.unsuitablePassword.rawValue)
             return
         }
@@ -80,7 +81,6 @@ class AuthViewController: UIViewController {
     }
     
     private func fetchData() {
-        
         guard let networkService = networkService, let locationService = locationService else {
             assertionFailure()
             return
@@ -95,7 +95,6 @@ class AuthViewController: UIViewController {
                 self?.alertWith(title: .warning, body: AlertWarning.fetchError.rawValue)
                 return
             }
-
             let output = "Температура: \(weather.temperatureString)\nДавлление: \(weather.pressereString)\nВлажность: \(weather.humidityString)"
             self?.alertWith(title: .weather, body: output)
         })
@@ -129,6 +128,7 @@ extension AuthViewController {
     
     // Здесь смещение можно реализовать с анимацией
     private func moveStackView(notification: Notification) {
+        stackViewCenter.constant = 0
         
         // получаем размер клавиатуры
         let info = notification.userInfo! as NSDictionary
@@ -168,10 +168,11 @@ extension AuthViewController: UITextFieldDelegate {
                 alertWith(title: .warning, body: AlertWarning.unsuitableEmail.rawValue)
                 return false
             }
-            passwordTextField.becomeFirstResponder()
+            textField.resignFirstResponder()
             return true
         case .default:
             guard let password = passwordTextField.text, password.isValidPassword() else {
+                passwordTextField.text = ""
                 alertWith(title: .warning, body: AlertWarning.unsuitablePassword.rawValue)
                 return false
             }
@@ -181,6 +182,6 @@ extension AuthViewController: UITextFieldDelegate {
         default:
             return false
         }
-
     }
+    
 }
